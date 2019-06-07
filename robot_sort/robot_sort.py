@@ -91,8 +91,8 @@ class SortingRobot:
         Returns True if the robot's light is on and False otherwise.
         """
         return self._light == "ON"
-
-"""
+    def sort(self):
+        """
 Plan for sort:
 
 Turn light on.
@@ -120,12 +120,6 @@ while robot light is on:
     if the robot's light isn't on, it means we didn't perform any swaps.
         break out of parent loop, list is sorted.
 """
-
-    def sort(self):
-        """
-        Sort the robot's list.
-        [15, 41, 58, 49]
-        """
         self.set_light_on()
 
         while self.light_is_on() == True:
